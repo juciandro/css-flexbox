@@ -1,0 +1,28 @@
+.container{
+	background-color: #999;
+	height: 500px;
+	display: flex;
+	
+	flex-direction: row;/*dereção do conteudo, alinhamento*/
+	/*row-reverse | column | column-reverse*/
+	
+	flex-wrap: wrap;/*define se os itens vai ter quebra de linha*/
+	/*nowrap | wrap-reverse*/
+	
+	flex-flow: row wrap;
+	
+	justify-content: flex-start;/*alinhamento horizontal*/
+	/*flex-end | center | space-between | space-around*/
+	
+	align-items: stretch;/*alinhamento vertical*/
+	/*flex-start | flex-end | center | baseline*/
+	
+	align-content: stretch;/*alinhamento vertical, quando os itens estiverem com quebra de linha*/
+	/*flex-start | flex-end | center | space-between | space-around*/
+}
+.item{
+	width: 300px;
+	background-color: #fff;
+	margin: 5px;
+	padding: 20px;	
+}
