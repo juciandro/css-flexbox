@@ -21,8 +21,20 @@
 	/*flex-start | flex-end | center | space-between | space-around*/
 }
 .item{
-	width: 300px;
+	width: 100px;
 	background-color: #fff;
 	margin: 5px;
-	padding: 20px;	
+	padding: 20px;
+	
+	/*flex-grow: 1;/*tamanho do elemento maior
+	flex-shrink: 1;/*reduz o damanho
+	flex-basis: 30px;*/
+	
+	flex: 1 1 20px;
 }
+.artigo1{
+	flex-grow: 2;
+}
+/*.artigo1{order:3;}
+.artigo2{order:1;}
+.artigo3{order:2;}*/
