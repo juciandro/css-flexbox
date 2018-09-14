@@ -1,5 +1,94 @@
 /*RESET*/
-*{margin: 0; padding: 0; font-size: 100%; box-sizing: border-box; font-family: 'Opens Sans', sans-serif}
+*{margin: 0; padding: 0; font-size: 100%; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
 ul{list-style: none;}
 a{text-decoration: none; cursor: pointer; opacity:0.9;}
 a:hover{opacity:1;}
+
+/*MENU*/
+.menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px 50px;
+}
+.menu img{
+	width: 200px;
+}
+.menu nav ul{
+	display: flex;
+}
+.menu a{
+	color: #191c03;
+}
+.menu a:hover{
+	text-decoration: underline;
+}
+.menu ul li{
+	margin: 0 15px;
+}
+.menu li:first-child{/*seleciona so primeiro*/
+	margin-left: 0;
+}
+.menu li:last-child{
+	margin-right: 0;
+}
+
+/*HERO*/
+.hero{
+	background-image: url(../imagens/hero.jpg);
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+.hero h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 3.2rem;
+	font-weight: 400;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+}
+.hero h3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 2rem;
+	font-weight: 300;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+.hero .botao{
+	background-color: #fff;
+	color: #191c03;
+	padding: 10px 25px;
+	text-transform: uppercase;
+}
+.hero .botao:hover{
+	text-decoration: underline;
+}
+
+
+
+
+/*mobile*/
+@media(max-width: 700px){
+	.menu{
+		flex-direction: column;
+	}
+	.menu img{
+		margin-bottom: 10px;
+	}
+	.hero h1{
+		font-size: 2.5rem;
+	}
+	.hero h3{
+		font-size: 1.5rem;
+	}
+}
