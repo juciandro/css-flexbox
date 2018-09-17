@@ -1,9 +1,3 @@
-/*RESET*/
-*{margin: 0; padding: 0; font-size: 100%; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
-ul{list-style: none;}
-a{text-decoration: none; cursor: pointer; opacity:0.9;}
-a:hover{opacity:1;}
-
 /*MENU*/
 .menu{
 	display: flex;
@@ -34,7 +28,7 @@ a:hover{opacity:1;}
 .menu li:first-child{/*seleciona so primeiro*/
 	margin-left: 0;
 }
-.menu li:last-child{
+.menu li:last-child{/*seleciona o ultimo*/
 	margin-right: 0;
 }
 
@@ -209,6 +203,11 @@ a:hover{opacity:1;}
     border-radius: 4px;
     border-color: #c3c63b;
 }
+:focus::-webkit-input-placeholder{
+	opacity: 0;
+	transition: opacity .35s ease-in-out;
+}
+
 .newsletter .botao{
 	background-color: #c3c63b;
     padding: 15px;
@@ -223,36 +222,28 @@ a:hover{opacity:1;}
 	opacity: 1;
 }
 
-
-
-/*mobile*/
-@media(max-width: 700px){
-	.menu{
-		flex-direction: column;
-	}
-	.menu img{
-		margin-bottom: 10px;
-	}
-	.hero h1{
-		font-size: 2.5rem;
-	}
-	.hero h3{
-		font-size: 1.5rem;
-	}
-	.album-img .small, .album-img .large{
-		flex-basis: 100%;
-	}
-	.newsletter input{
-		flex-basis: 100%;
-		margin-bottom: 15px;
-	}
-	.newsletter .botao{
-		text-align: center;
-	}
+/*RODAPÉ*/
+.rodape{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 0;
+	background-color: #191c03;
+	color: #fff;
 }
-
-@media(max-width: 850px){
-	.caracteristicas .grid{
-		flex-direction: column;
-	}
+.rodape ul{
+	display: flex;
+	margin-bottom: 25px;
+}
+.rodape ul li{
+	margin-right: 10px;
+}
+.rodape ul li:last-child{
+	margin-right: 0;
+}
+.rodape ul li a{
+	color: #c3c63b;
+}
+.rodape p{
+	text-align: center;
 }

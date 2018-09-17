@@ -1,0 +1,31 @@
+/*mobile*/
+@media(max-width: 700px){
+	.menu{
+		flex-direction: column;
+	}
+	.menu img{
+		margin-bottom: 10px;
+	}
+	.hero h1{
+		font-size: 2.5rem;
+	}
+	.hero h3{
+		font-size: 1.5rem;
+	}
+	.album-img .small, .album-img .large{
+		flex-basis: 100%;
+	}
+	.newsletter input{
+		flex-basis: 100%;
+		margin-bottom: 15px;
+	}
+	.newsletter .botao{
+		text-align: center;
+	}
+}
+
+@media(max-width: 850px){
+	.caracteristicas .grid{
+		flex-direction: column;
+	}
+}
